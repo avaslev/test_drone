@@ -1,54 +1,20 @@
 {
-  "name": "performanceplatform-big-screen-view",
-  "version": "0.0.1",
-  "description": "This project is a JavaScript application for displaying data from the Performance Platform fullscreen on a large display, for example in building receptions and offices.",
-  "private": true,
-  "scripts": {
-    "test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
-  },
-  "author": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alphagov/performanceplatform-big-screen-view.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alphagov/performanceplatform-big-screen-view/issues"
-  },
-  "homepage": "https://github.com/alphagov/performanceplatform-big-screen-view",
+  "name": "SinglePageApplication",
+  "author": "Joel Griffith",
+  "version": "0.1.0",
   "devDependencies": {
-    "browserify": "6.3.2",
-    "chai": "1.10.0",
-    "gulp": "3.8.10",
-    "gulp-connect": "2.2.0",
-    "gulp-jscs": "1.3.0",
-    "gulp-jshint": "1.9.0",
-    "gulp-mocha": "1.1.1",
-    "gulp-sass": "1.1.0",
-    "jscs": "1.7.3",
-    "jshint": "2.5.10",
-    "mocha": "2.0.1",
-    "q": "1.1.2",
-    "sinon": "1.12.1",
-    "sinon-chai": "2.6.0",
-    "vinyl-source-stream": "1.0.0",
-    "karma": "0.12.28",
-    "karma-browserify": "1.0.0",
-    "karma-mocha": "0.1.3",
-    "karma-chai": "0.1.0",
-    "karma-sinon": "1.0.3",
-    "karma-phantomjs-launcher": "0.1.4",
-    "brfs": "1.2.0",
-    "karma-spec-reporter": "0.0.13",
-    "chai-jquery": "2.0.0",
-    "karma-chai-jquery": "1.0.0",
-    "karma-jquery": "0.1.0"
-  },
-  "dependencies": {
-    "backbone": "1.1.2",
-    "underscore": "1.7.0",
-    "govuk_frontend_toolkit": "3.0.1",
-    "performanceplatform-client.js": "git+https://github.com/alphagov/performanceplatform-client.js.git#release_98",
-    "mustache": "0.8.2"
+    "es6-loader": "^0.2.0",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-clean": "^0.3.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-imagemin": "^1.0.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-sass": "^0.7.3",
+    "gulp-uglify": "^0.3.1",
+    "gulp-webpack": "^0.3.0",
+    "jshint": "^2.5.4",
+    "webpack": "^1.4.13"
   }
 }

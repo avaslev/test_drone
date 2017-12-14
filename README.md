@@ -1,31 +1,41 @@
-# Performance Platform big screen view
+# Single-Page Application Build
+Your one-stop shop for a single-page application build that includes the following:
 
-This project is a JavaScript application for displaying data from
-the Performance Platform fullscreen on a large display, for example
-in building receptions and offices.
+The good stuff
+- SASS -> CSS building with minification in distribution phase
+- JavaScript bundling. Understands ES6, AMD, and CommonJs
+- Human-readable dev build and production-ready dist build.
+- The option to use NPM OR Bower for your front-end package manager
+- A "watch" operation that utilizes live-reload for pushing hot content
+- Image compression for distribution
 
-The style was inspired by @demotive's [gds-performance-slides](https://github.com/Demotive/gds-performance-slides) ([available on Heroku](https://gds-screens-slides.herokuapp.com/)).
+The nice-to-haves
+- A .editorconfig and .jshint file with some initialization to get you started
+- A stubbed out .gitignore to bootstrap things up
+- An archive of the project with no GIT information, so you can do whatever you want VCS-wise
 
-## Setup
-This project uses [gulp.js][gulp] to build. Install it with `npm install -g gulp` or just run
-`npm install` in this project and use the local version at `./node_modules/gulp/bin/gulp.js`.
+## Getting Started
+You'll need the following installed to make this whole build operational:
 
-[gulp]: http://gulpjs.com/
+### Required:
+- Node.js, NPM, and gulp.
 
-## Running the app
+### Optional:
+- JSHint
+- Bower
+- A zip utility to unarchive the latest.zip
 
-The app uses the [Performance Platform client](https://github.com/alphagov/performanceplatform-client.js). Run npm install to make sure you have the up-to-date copy.
+## Building
+If you're familiar with this sort of a thing, just clone this repo and run `npm install` in the root directory. You're ready to go.
 
-To start a development server:
+If not, here is the play-by-play:
 
-```
-gulp server
-```
+- In command line, run `git clone https://github.com/joelgriffith/spa-build.git` in a folder of your choosing
+- Then (again in the command line), run `cd spa-build && npm install`
+- OPTIONAL: If you want to use this bootstrap of sorts without the git information from cloning, there is a `latest.zip` that is an archive of the project, minus the `.git/` folder
+- You're ready to code!
 
-Then hit a valid dashboard URL eg. http://localhost:8080/carers-allowance
-
-To run the tests:
-
-```
-npm tests
-```
+## More specifically
+The build process utilizies numerous packages and optimizations from the NPM/Gulp community. Many thanks to all of those packages!
+If you'd like to make changes, feel free to see the mostly annoted build code in `gulpfile.js` which includes all the information you'll need. Make changes as you see fit.
+To that end, most of the build operations look for a manifest of some sort, this is either in the`src/js/index.js` or `src/scss/index.scss`. Include whatever modules/code in there and they'll be built out into one file.
