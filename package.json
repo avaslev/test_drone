@@ -1,4 +1,20 @@
 {
     "name": "drone-project",
-    "version": "0.1.2"
+    "version": "0.1.2",
+    "dependencies": {
+        "express": "^4.16.1",
+        "mocha": "^3.5.0"
+    },
+    "scripts": {
+        "test": "mocha test",
+        "lint": "eslint ./"
+    },
+    "devDependencies": {
+        "eslint": "^4.8.0",
+        "eslint-config-prettier": "^2.6.0",
+        "eslint-plugin-prettier": "^2.3.1",
+        "prettier": "1.7.4",
+        "should": "^13.1.1",
+        "supertest": "^3.0.0"
+    }
 }
