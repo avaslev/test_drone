@@ -1,11 +1,14 @@
 pipeline:
-  build:
+  install:
     image: node
     commands:
+      - node -v
+      - npm -v
       - npm install
   docker:
     image: plugins/docker
     repo: cloud.canister.io:5000/av/test_drone
     registry: cloud.canister.io:5000
+    dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
     tags: latest
